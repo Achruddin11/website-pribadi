@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Pengaturan dasar */
 * {
     margin: 0;
@@ -108,3 +109,115 @@ section:not(#home) p {
         font-size: 32px;
     }
 }
+=======
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: white;
+}
+
+/* Bagian navigasi */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #111c32;
+}
+
+header h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Bagian utama */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+/* Tombol */
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Bagian lainnya */
+section:not(#home) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section:not(#home) h2 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+section:not(#home) p {
+    line-height: 1.8;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+}
+>>>>>>> origin/main
