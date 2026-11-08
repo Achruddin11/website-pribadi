@@ -1,55 +1,539 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pribadi Achruddin</title>
+
+    <meta name="description" content="Portfolio pribadi Achruddin, Mahasiswa Ilmu Komputer Universitas Halu Oleo.">
+    <meta name="author" content="Achruddin">
+
+    <title>Achruddin | Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h2>ACHRUDDIN</h2>
+    <!-- HEADER / NAVBAR -->
+    <header class="header" id="header">
+        <nav class="navbar container">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="logo">
+                Achruddin<span>.</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema">
+                    ☾
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Halo, Saya Achruddin</h1>
-        <h2>Mahasiswa Ilmu Komputer</h2>
+    <main>
 
-        <p>
-            Selamat datang di website pribadi saya.
-            Saya sedang belajar teknologi dan pemrograman.
-        </p>
+        <!-- HOME SECTION -->
+        <section class="home section" id="home">
+            <div class="container home-container">
 
-        <button onclick="sapa()">Kenali Saya</button>
-    </section>
+                <div class="home-content reveal">
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>
-            Saya adalah mahasiswa Ilmu Komputer
-            Universitas Halu Oleo.
-        </p>
-    </section>
+                    <span class="home-greeting">
+                        Halo, Selamat Datang!
+                    </span>
 
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <p>Tempat menampilkan hasil karya dan proyek saya.</p>
-    </section>
+                    <h1>
+                        Saya <span>Achruddin</span>
+                    </h1>
 
-    <section id="contact">
-        <h2>Hubungi Saya</h2>
-        <p>Email: emailkamu@example.com</p>
-    </section>
+                    <h2>
+                        Mahasiswa Ilmu Komputer
+                    </h2>
 
+                    <p>
+                        Saya merupakan mahasiswa Ilmu Komputer
+                        Universitas Halu Oleo yang memiliki ketertarikan
+                        pada teknologi, pemrograman, dan pengembangan
+                        website.
+                    </p>
+
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Lihat Proyek
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Hubungi Saya
+                        </a>
+                    </div>
+
+                    <div class="home-socials">
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+
+                </div>
+
+                <!-- FOTO PROFIL -->
+                <div class="home-image reveal">
+                    <div class="image-decoration"></div>
+
+                    <img
+                        src="./assets/images/profile.jpeg"
+                        alt="Foto Profil Achruddin"
+                        onerror="this.alt='Foto belum ditemukan. Periksa folder assets/images';"
+                    >
+
+                    <div class="image-caption">
+                        <span>Personal Portfolio</span>
+                        <strong>Achruddin</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Kenali Saya</span>
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Mengenal lebih dekat perjalanan dan minat saya.
+                    </p>
+                </div>
+
+                <div class="about-container">
+
+                    <div class="about-content reveal">
+                        <h3>Halo, saya Achruddin!</h3>
+
+                        <p>
+                            Saya adalah mahasiswa Ilmu Komputer
+                            di Universitas Halu Oleo.
+                            Saya tertarik mempelajari dunia teknologi,
+                            khususnya pemrograman dan pengembangan
+                            aplikasi berbasis website.
+                        </p>
+
+                        <p>
+                            Saya senang mempelajari hal-hal baru,
+                            mengembangkan kemampuan, serta mencoba
+                            berbagai tantangan dalam dunia teknologi.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Mari Terhubung
+                        </a>
+                    </div>
+
+                    <div class="about-info reveal">
+
+                        <div class="info-card">
+                            <span>Nama</span>
+                            <strong>Achruddin</strong>
+                        </div>
+
+                        <div class="info-card">
+                            <span>Profesi</span>
+                            <strong>Mahasiswa</strong>
+                        </div>
+
+                        <div class="info-card">
+                            <span>Jurusan</span>
+                            <strong>Ilmu Komputer</strong>
+                        </div>
+
+                        <div class="info-card">
+                            <span>Universitas</span>
+                            <strong>Universitas Halu Oleo</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills section" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Kemampuan</span>
+                    <h2>Skills & Expertise</h2>
+                    <p>
+                        Teknologi dan kemampuan yang sedang saya
+                        pelajari dan kembangkan.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">HTML</div>
+                        <h3>HTML5</h3>
+                        <p>Struktur halaman website.</p>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">CSS</div>
+                        <h3>CSS3</h3>
+                        <p>Desain dan tampilan website.</p>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Interaksi dan logika website.</p>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">UI</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Desain antarmuka pengguna.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects section" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Portofolio</span>
+                    <h2>Proyek Saya</h2>
+                    <p>
+                        Beberapa proyek yang dapat ditampilkan
+                        dalam portofolio ini.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card reveal">
+                        <img
+                            src="./assets/images/profile.jpeg"
+                            alt="Proyek Personal Portfolio"
+                        >
+
+                        <div class="project-content">
+                            <span class="project-category">Website</span>
+                            <h3>Personal Portfolio</h3>
+                            <p>
+                                Website pribadi untuk memperkenalkan
+                                profil dan kemampuan.
+                            </p>
+
+                            <a href="#home" class="project-link">
+                                Lihat Proyek →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img
+                            src="assets/images/project-placeholder-2.svg"
+                            alt="Preview proyek desain website"
+                        >
+
+                        <div class="project-content">
+                            <span class="project-category">UI/UX</span>
+                            <h3>Website Design</h3>
+                            <p>
+                                Konsep desain antarmuka website
+                                modern dan responsif.
+                            </p>
+
+                            <a href="#projects" class="project-link">
+                                Lihat Proyek →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img
+                            src="./assets/images/profile.jpeg"
+                            alt="Proyek Programming"
+                        >
+
+                        <div class="project-content">
+                            <span class="project-category">Programming</span>
+                            <h3>Mini Application</h3>
+                            <p>
+                                Proyek aplikasi sederhana untuk
+                                mengembangkan kemampuan pemrograman.
+                            </p>
+
+                            <a href="#projects" class="project-link">
+                                Lihat Proyek →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section class="education section" id="education">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Akademik</span>
+                    <h2>Pendidikan</h2>
+                    <p>Riwayat pendidikan saya.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">
+                                [Tahun masuk] - Sekarang
+                            </span>
+
+                            <h3>Universitas Halu Oleo</h3>
+
+                            <p>
+                                Program Studi Ilmu Komputer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">[Tahun]</span>
+
+                            <h3>[Nama Sekolah Menengah Atas]</h3>
+
+                            <p>
+                                [Jurusan atau informasi pendidikan].
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="experience section" id="experience">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Perjalanan</span>
+                    <h2>Pengalaman</h2>
+                    <p>
+                        Pengalaman organisasi, kepanitiaan,
+                        maupun pekerjaan.
+                    </p>
+                </div>
+
+                <div class="experience-grid">
+
+                    <div class="experience-card reveal">
+                        <span class="experience-icon">01</span>
+
+                        <h3>[Nama Organisasi]</h3>
+
+                        <span class="experience-period">[Tahun]</span>
+
+                        <p>
+                            Tambahkan deskripsi pengalaman,
+                            jabatan, dan tanggung jawab Anda.
+                        </p>
+                    </div>
+
+                    <div class="experience-card reveal">
+                        <span class="experience-icon">02</span>
+
+                        <h3>[Nama Kepanitiaan]</h3>
+
+                        <span class="experience-period">[Tahun]</span>
+
+                        <p>
+                            Tambahkan informasi kegiatan,
+                            peran, dan kontribusi Anda.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-subtitle">Hubungi Saya</span>
+                    <h2>Mari Terhubung</h2>
+                    <p>
+                        Silakan kirim pesan melalui formulir berikut.
+                    </p>
+                </div>
+
+                <div class="contact-container">
+
+                    <div class="contact-info reveal">
+
+                        <h3>Informasi Kontak</h3>
+
+                        <p>
+                            Saya terbuka untuk berdiskusi,
+                            berkolaborasi, dan berbagi pengalaman.
+                        </p>
+
+                        <div class="contact-detail">
+                            <span>Email</span>
+                            <strong>emailanda@gmail.com</strong>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span>Universitas</span>
+                            <strong>Universitas Halu Oleo</strong>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span>Lokasi</span>
+                            <strong>[Kota Anda]</strong>
+                        </div>
+
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Masukkan nama Anda"
+                                required
+                                minlength="2"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nama@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Subjek pesan"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tuliskan pesan Anda..."
+                                required
+                                minlength="10"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Kirim Pesan →
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <a href="#home" class="logo">
+                Achruddin<span>.</span>
+            </a>
+
+            <p>
+                © <span id="current-year"></span>
+                Achruddin. Seluruh hak cipta dilindungi.
+            </p>
+
+            <div class="footer-socials">
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Kembali ke atas"
+    >
+        ↑
+    </button>
+
+    <!-- NOTIFICATION -->
+    <div id="notification" class="notification" role="status">
+        <span id="notification-message"></span>
+    </div>
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
